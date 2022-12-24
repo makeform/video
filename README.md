@@ -1,1 +1,5 @@
-# video
+# @makeform/video
+
+## License
+
+MIT
