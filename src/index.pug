@@ -1,44 +1,6 @@
 div
   style(type="text/css"): include:stylus index.styl
   script(type="@plotdb/block"): include:lsc index.ls
-  .form-group(plug="widget")
-    label.d-flex.align-items-end.flex-wrap
-      div(ld="display",data-display="block")
-        span(ld="label")
-        span.text-danger.ml-2(ld="is-required") *
-      .flex-grow-1
-      .m-edit: .text-danger.text-sm(ld="limitation")
-    .text-sm.text-muted(ld="display", data-display="block"): div(ld="desc", style="margin:-.6em 0 .7em")
-    .d-flex.align-items-start.mb-2
-      .m-edit.btn.btn-primary.btn-upload.mr-2.px-4.ld-ext-right(ld="button")
-        span(t) 上傳
-        input(type="file",ld="input")
-        .ld.ld-spin.ld-spinner
-
-      .d-flex.flex-column
-        .d-flex.flex-column._g-2
-          .btn.d-flex._g-3.align-items-start(ld-each="file-info")
-            span &#8227;
-            .text-left
-              a(ld="detail",rel="noopener noreferrer",target="_blank")
-                div(ld="filename") ...
-                .d-flex.flex-wrap(style="font-size:12px")
-                  div
-                    span(t) 檔案大小
-                    span.mr-1 :
-                    span(ld="size")
-                  .mx-2 /
-                  div
-                    span(t) 上傳時間
-                    span.mr-1 :
-                    span(ld="time")
-
-            i.m-edit.i-trashcan.text-danger.text-sm.clickable(ld="delete")
-        .text-danger.btn(t,ld="no-file") 尚未上傳影片
-        .text-danger.btn.d-none.pl-4.text-left(t,ld="file-uploading")
+  div(plug="preview")
     .mb-2.w-100(ld-each="video"): video.rounded(controls)
       source(ld="source",type="video/mp4")
-    .text-danger.m-edit.mb-2(ld="error-root")
-      div(ld-each="error") #[i.i-exclamation-circle] #[span(ld="text")]
-    .text-danger.text-sm.m-edit
-      div(ld-each="note")

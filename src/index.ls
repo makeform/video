@@ -1,26 +1,12 @@
 module.exports =
   pkg:
-    name: "@makeform/video", extend: {name: '@makeform/upload', dom: "overwrite"}
+    name: "@makeform/video", extend: {name: '@makeform/upload'}
     i18n:
       en:
-        "未命名的影片": "unnamed video"
-        "上傳": "upload"
-        "上傳中": "uploading"
-        "尚未上傳影片": "no file uploaded yet"
-        "檔案大小": "File Size"
-        "上傳時間": "Upload Time"
         "檔案不支援": "file is not supported"
       "zh-TW":
-        "未命名的影片": "未命名的影片"
-        "上傳": "上傳"
-        "上傳中": "上傳中"
-        "尚未上傳影片": "尚未上傳影片"
-        "檔案大小": "檔案大小"
-        "上傳時間": "上傳時間"
         "檔案不支援": "檔案不支援"
     dependencies: [
-      {url: "https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js", async: false}
-      {url: "https://cdn.jsdelivr.net/npm/moment-timezone@0.5.34/builds/moment-timezone-with-data.min.js"}
       {url: "https://cdn.jsdelivr.net/npm/mux.js@6.0.1/dist/mux.min.js"}
     ]
 

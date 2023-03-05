@@ -1,5 +1,10 @@
 # Change Logs
 
+## v1.0.4
+
+ - re-use parent html by plugging preview nodes.
+
+
 ## v1.0.3
 
  - make file info wrappable
