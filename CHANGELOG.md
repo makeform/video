@@ -1,5 +1,10 @@
 # Change Logs
 
+## v1.0.5
+
+ - use first 1MB for type determination
+
+
 ## v1.0.4
 
  - re-use parent html by plugging preview nodes.
