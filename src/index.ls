@@ -38,7 +38,6 @@ module.exports =
             !video.filter(-> !/avc1/.exec it).length and
             !audio.filter(-> !/mp3|mp4|flac|aac/.exec it).length
           )
-          supported = false
           return {video, audio, supported, message: t("檔案不支援")}
 
     view = new ldview do

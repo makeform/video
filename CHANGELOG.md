@@ -1,5 +1,10 @@
 # Change Logs
 
+## v1.0.7
+
+ - remove unnecessary support = false flag
+
+
 ## v1.0.6
 
  - disable partial-file mechanism since it breaks format checking
