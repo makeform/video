@@ -16,11 +16,16 @@ module.exports =
       (res, rej) <- new Promise _
       fr = new FileReader!
       /*
+      # this uses partial file for muxjs
+      # however, there are files that we need almost the whole file
+      # for muxjs to correctly detect its codec.
+      # before a better solution is found, we will use the whole file
       blob = file.slice start, end
       fr.onload = -> res fr.result
       fr.onerror = -> rej fr.error
       fr.readAsArrayBuffer blob
       */
+      # below code loads the whole file
       fr.onload = -> res fr.result
       fr.onerror = -> rej fr.error
       fr.readAsArrayBuffer file
