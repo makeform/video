@@ -1,5 +1,11 @@
 # Change Logs
 
+## v1.0.6
+
+ - disable partial-file mechanism since it breaks format checking
+ - provide additional error message to for @makeform/upload to show
+
+
 ## v1.0.5
 
  - use first 1MB for type determination
