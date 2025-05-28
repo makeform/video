@@ -1,5 +1,11 @@
 # Change Logs
 
+## v1.0.8
+
+ - add i18n text for widget note
+ - tweak error message to clarify actual limitations in codec
+
+
 ## v1.0.7
 
  - remove unnecessary support = false flag

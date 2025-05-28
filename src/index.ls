@@ -3,9 +3,11 @@ module.exports =
     name: "@makeform/video", extend: {name: '@makeform/upload'}
     i18n:
       en:
-        "檔案不支援": "file format: Please upload a video file in mp4 format with h.264 encoding."
+        "檔案不支援": "Please upload a video file with the .mp4 extension, using the MP4 container, encoded with H.264 (avc1) for video and MP3, AAC, or FLAC for audio."
+        "video-format-hint": "Please upload a video file with the .mp4 extension, using the MP4 container, encoded with H.264 (avc1) for video and MP3, AAC, or FLAC for audio."
       "zh-TW":
-        "檔案不支援": "檔案格式不符：請上傳使用 mp4 格式，並且採用 h.264 編碼的影片檔。"
+        "檔案不支援": "檔案格式不符：請上傳 .mp4 副檔名的影片(採 MP4 容器)，影片編碼需使用 H.264 (avc1)、音訊編碼需為 MP3、AAC 或 FLAC 其中一種。"
+        "video-format-hint": "請上傳 .mp4 副檔名的影片(採 MP4 容器)，影片編碼需使用 H.264 (avc1)、音訊編碼需為 MP3、AAC 或 FLAC 其中一種。"
     dependencies: [
       {url: "https://cdn.jsdelivr.net/npm/mux.js@6.0.1/dist/mux.min.js"}
     ]
