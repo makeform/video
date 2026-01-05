@@ -1,6 +1,7 @@
 module.exports =
   pkg:
     name: "@makeform/video", extend: {name: '@makeform/upload'}
+    host: name: \@grantdash/composer
     i18n:
       en:
         "檔案不支援": "Please upload a video file with the .mp4 extension, using the MP4 container, encoded with H.264 (avc1) for video and MP3, AAC, or FLAC for audio."

@@ -1,5 +1,10 @@
 # Change Logs
 
+## v1.1.0
+
+ - add host `@grantdash/composer`
+
+
 ## v1.0.8
 
  - add i18n text for widget note
