@@ -1,5 +1,10 @@
 # Change Logs
 
+## v1.1.1
+
+ - use local mux.js lib
+
+
 ## v1.1.0
 
  - add host `@grantdash/composer`

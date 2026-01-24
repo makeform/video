@@ -10,7 +10,8 @@ module.exports =
         "檔案不支援": "檔案格式不符：請上傳 .mp4 副檔名的影片(採 MP4 容器)，影片編碼需使用 H.264 (avc1)、音訊編碼需為 MP3、AAC 或 FLAC 其中一種。"
         "video-format-hint": "請上傳 .mp4 副檔名的影片(採 MP4 容器)，影片編碼需使用 H.264 (avc1)、音訊編碼需為 MP3、AAC 或 FLAC 其中一種。"
     dependencies: [
-      {url: "https://cdn.jsdelivr.net/npm/mux.js@6.0.1/dist/mux.min.js"}
+    # or use cdn: https://cdn.jsdelivr.net/npm/mux.js@6.0.1/dist/mux.min.js
+    * name: \mux.js, path: \dist/mux.min.js
     ]
 
   init: ({ctx, root, parent, t}) ->
