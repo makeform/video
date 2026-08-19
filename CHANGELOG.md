@@ -1,5 +1,10 @@
 # Change Logs
 
+## v1.1.2
+
+ - upgrade dependencies
+
+
 ## v1.1.1
 
  - use local mux.js lib
